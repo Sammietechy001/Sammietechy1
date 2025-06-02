@@ -54,6 +54,9 @@ to {
     z-index: 1;
     position: fixed;
     width: 100%; 
+    @media screen and (max-width:768px){
+    padding: 0px 45px 0px 20px;
+    }
 }
 .site-logo {
     height: 180px;
@@ -108,9 +111,13 @@ to {
     width: 220px;
     height: 55px;
     border-radius: 30px;
-     @media screen and (max-width:768px) {
+    @media screen and (max-width:768px) {
     display: none;
     }
+}
+.header-button:hover {
+    background-color:#b85954;
+    animation: pulse 5.5s infinite;
 }
 
 /* Section-1*/
@@ -142,7 +149,7 @@ to {
     margin-top: 20px;
     margin-bottom: 30px;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     width: 280px;
     height: 40px;
     
@@ -160,7 +167,7 @@ to {
     width: 0;
     animation: typing 4s steps(50) forwards, blink 0.7s step-end infinite;
     @media screen and (max-width:768px){
-    font-size: 30px;
+    font-size: 28px;
     line-height: 50px;
     margin-bottom: 20px;
     }
@@ -176,7 +183,7 @@ to {
     margin-bottom: 20px;
     width: 570px;
     @media screen and (max-width:768px) {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 28px;
     width: 400px;
     }
@@ -188,14 +195,14 @@ to {
 
 
 .sec-1-img {
-    height: 450px;
-    width: 350px;
+    height: 430px;
+    width: 330px;
     border-radius:50%;
     object-fit: cover;
     animation: pulse 5.5s infinite;
     @media screen and (max-width:768px) {
-    height: 360px;
-    width: 280px;
+    height: 350px;
+    width: 270px;
     border-radius:50%;
     }
 }
@@ -208,14 +215,19 @@ to {
     font-size: 20px;
     width: 180px;
     height: 50px;
-    border: none;
+    border: 3px solid #973c37;
     border-radius: 8px;
     margin-top: 20px;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     width: 140px;
     height: 45px;
     }
+}
+.sec-1-button-1:hover {
+    background:none;
+    border-color: #973c37;
+    color: black;
 }
 
 .sec-1-button-2 {
@@ -230,10 +242,14 @@ to {
     background: none;
     margin-top: 20px;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     width: 140px;
     height: 45px;
     }
+}
+.sec-1-button-2:hover {
+    background-color:#973c37;
+    color: white;
 }
 
 /* Section-2*/
@@ -243,7 +259,7 @@ to {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
+    text-align: left;
     /*display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px 50px;*/
@@ -255,7 +271,8 @@ to {
     /*display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px 50px;*/
-    height: 1000px; 
+    text-align: center;
+    height: 1005px; 
     padding-left:30px ;
     padding-right:30px ; 
     } 
@@ -272,8 +289,8 @@ to {
     }
 }
 .sec-2-img {
-    height: 450px;
-    width: 350px;
+    height: 410px;
+    width: 310px;
     border-top-left-radius: 80px;
     border-top-right-radius:5px;
     border-bottom-left-radius: 5px;
@@ -281,8 +298,8 @@ to {
     object-fit: cover;
     animation: pulse 5.5s infinite;
     @media screen and (max-width:768px) {
-    height: 360px;
-    width: 280px;
+    height: 320px;
+    width: 240px;
     }
 }
 
@@ -320,11 +337,8 @@ to {
     width: 550px;
     line-height: 25px;
    /* padding: 0px 130px;*/
-    animation: zoomIn 0.6s ease-out forwards;
-    transform: scale(0);
-    opacity: 0;
     @media screen and (max-width:768px) {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 28px;
     width: 400px;
     /*padding: 0px 0px;*/
@@ -342,8 +356,12 @@ to {
     background: none;
     margin-top: 20px;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     }
+}
+.section-2-button:hover {
+    background-color:white;
+    color: #973c37;
 }
 /*Section-3*/
 .section-3 {
@@ -420,6 +438,9 @@ to {
     font-size: 18px;
     color: white;
     margin-bottom: 20px;
+    @media screen and (max-width:768px) {
+    font-size: 16px;
+    }
 }
 .sec-3-img {
     height: 250px;
@@ -443,8 +464,12 @@ to {
     background: none;
     margin-top: 20px;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     }
+}
+.sec-3-general-button:hover {
+    background-color:#973c37;
+    color: white;
 }
 /*.sec-3-general-button:hover {
     background-color:  #973c37;
@@ -495,9 +520,10 @@ to {
     width: 340px;
     object-fit: cover;
     border-radius: 12px;
-    animation: zoomIn 0.6s ease-out forwards;
+    animation: pulse 5.5s infinite;
+    /*animation: zoomIn 0.6s ease-out forwards;
     transform: scale(0);
-    opacity: 0;
+    opacity: 0;*/
     @media screen and (max-width:768px) {
     font-size: 25px;
     }
@@ -511,10 +537,13 @@ to {
     border: 3px solid #973c37;
     background: none;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     }
 }
-
+.sec-4-general-button:hover {
+    background-color:#973c37;
+    color: white;
+}
 
 /*Section-5*/
 .section-5 {
@@ -584,13 +613,13 @@ to {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
-    width: 600px;
+    width: 570px;
     line-height: 25px;
    /* padding: 0px 130px;*/
     @media screen and (max-width:768px) {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 28px;
-    width: 425px;
+    width: 400px;
     /*padding: 0px 0px;*/
     }
 }
@@ -602,12 +631,18 @@ to {
     font-size: 20px;
     padding: 10px 40px;
     border-radius: 8px;
-    border: 2px solid white;
+    border: 3px solid white;
     margin-top: 20px;
     @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 17px;
     }
 }
+.section-5-button:hover {
+    background: none;
+    border-color: white;
+    color: white;
+}
+
 
 /*Footer*/
 .footer-bg {
@@ -626,6 +661,6 @@ to {
     font-size: 18px;
     color: white;
     @media screen and (max-width:768px) {
-    font-size: 17px;
+    font-size: 16px;
     }
 }
