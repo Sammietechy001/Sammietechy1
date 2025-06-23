@@ -16,16 +16,6 @@ to {
     border-color: transparent;
 }
 }
-@keyframes zoomIn {
-    0% {
-    transform: scale(0);
-    opacity: 0;
-    }
-    100% {
-    transform: scale(1);
-    opacity: 1;
-    }
-}
  @keyframes pulse {
       0% {
         transform: scale(1);
@@ -75,15 +65,43 @@ to {
     }
 }
 .hamburger {
-    display: none;
-    color: black;
     font-size: 28px;
     cursor: pointer;
+    padding: 10px;
+    user-select: none;
+    display: none;
+    color: black;
     @media screen and (max-width:768px) {
     display: block;
     padding-left: 150px;
     }
+}   
+.menuSec {
+    display: none;
+    background-color:#973c37;
+    padding: 10px;
+    position: absolute;
+    top:100px;
+    width: 100%;
+    left: 0px;
 }
+.menuSec ul {
+  list-style-type: none;
+  padding: 0;
+}
+.menuSec li {
+  margin: 10px 0;
+}
+.menuSec a {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.menuSec.open{
+    display:block;
+}
+
 .menu {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
@@ -161,11 +179,11 @@ to {
     font-size: 40px;
     line-height: 60px;
     margin-bottom: 20px;
-    white-space: nowrap;
+    /*white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #ececec;
     width: 0;
-    animation: typing 4s steps(50) forwards, blink 0.7s step-end infinite;
+    animation: typing 4s steps(50) forwards, blink 0.7s step-end infinite;*/
     @media screen and (max-width:768px){
     font-size: 28px;
     line-height: 50px;
@@ -196,10 +214,10 @@ to {
 
 .sec-1-img {
     height: 430px;
-    width: 330px;
     border-radius:50%;
+    width: 330px;
     object-fit: cover;
-    animation: pulse 5.5s infinite;
+    animation: pulse 15s infinite;
     @media screen and (max-width:768px) {
     height: 350px;
     width: 270px;
@@ -296,7 +314,6 @@ to {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 80px;
     object-fit: cover;
-    animation: pulse 5.5s infinite;
     @media screen and (max-width:768px) {
     height: 320px;
     width: 240px;
@@ -350,7 +367,8 @@ to {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     font-size: 20px;
-    padding: 10px 40px;
+    width: 180px;
+    height: 50px;
     border-radius: 8px;
     border: 3px solid white;
     background: none;
@@ -458,7 +476,8 @@ to {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     font-size: 20px;
-    padding: 10px 40px;
+     width: 180px;
+    height: 50px;
     border-radius: 8px;
     border: 3px solid #973c37;
     background: none;
@@ -520,10 +539,6 @@ to {
     width: 340px;
     object-fit: cover;
     border-radius: 12px;
-    animation: pulse 5.5s infinite;
-    /*animation: zoomIn 0.6s ease-out forwards;
-    transform: scale(0);
-    opacity: 0;*/
     @media screen and (max-width:768px) {
     font-size: 25px;
     }
@@ -532,7 +547,9 @@ to {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     font-size: 20px;
-    padding: 10px 40px;
+    /*padding: 10px 40px;*/
+    width: 180px;
+    height: 50px;
     border-radius: 8px;
     border: 3px solid #973c37;
     background: none;
@@ -623,26 +640,29 @@ to {
     /*padding: 0px 0px;*/
     }
 }
-.section-5-button {
+
+.sec-5-button-2 {
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
-    color: #973c37;
+    color: white;
     font-size: 20px;
-    padding: 10px 40px;
-    border-radius: 8px;
+    width: 180px;
+    height: 50px;
     border: 3px solid white;
+    border-radius: 8px;
+    background: none;
     margin-top: 20px;
     @media screen and (max-width:768px) {
     font-size: 17px;
+    width: 140px;
+    height: 45px;
     }
 }
-.section-5-button:hover {
-    background: none;
-    border-color: white;
+.sec-5-button-2:hover {
+    background-color:#973c37;
     color: white;
+    border: 3px solid #973c37;
 }
-
 
 /*Footer*/
 .footer-bg {
@@ -660,7 +680,12 @@ to {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
+    text-decoration:none ;
     @media screen and (max-width:768px) {
     font-size: 16px;
     }
+}
+.icon-bg {
+    display: flex;
+    gap: 12px;
 }
