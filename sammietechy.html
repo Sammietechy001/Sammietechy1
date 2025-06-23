@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="sammietechy.css">
      <link rel="icon" type="image/x-icon" href="Thumbnails/sammie_logo-removebg-preview.png">
     <link >
+    <!-- <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu-2');
+        hamburger.addEventListener('click', () => {
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script> -->
 </head>
 <body>
-    <script src="sammietechy.js"></script>
+    
      <!--Head Section-->
      <header class="header">
-        <nav><img class="site-logo" src="Thumbnails/sammie_logo-removebg-preview.png"></nav>
+        <nav><a href="#home-page"><img class="site-logo" src="Thumbnails/sammie_logo-removebg-preview.png"></a></nav>
         <nav>
-            <div id="hamburger" class="hamburger" onclick="togglemenu()">&#9776;</div>
             <ul class="menu-container">
                 <a class="menu" href="#home-page"><li>Home</li></a>
                 <a class="menu" href="#About-me"><li>About</li></a>
                 <a class="menu" href="#Skills"><li>Skills</li></a>
                 <a class="menu" href="#Work"><li>Work</li></a>
             </ul>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav class="menuSec" id="menuSec">
+            <ul>
+                <a  href="#home-page"><li>Home</li></a>
+                <a  href="#About-me"><li>About</li></a>
+                <a  href="#Skills"><li>Skills</li></a>
+                <a  href="#Work"><li>Work</li></a>
+            </ul>
+        </nav>
+
         </nav>
         <nav>
             <a href="#contact"><button class="header-button">Contact &#x21aa;</button></a>
@@ -50,7 +67,7 @@
 <div id="About-me" class="section-2">
    <h2 class="section-2-heading">About</h2>
    <div class="about-container">
-        <div>
+        <div class="sec-2-im">
             <img class="sec-2-img" src="Images/1732992824267.jpg">
         </div>
         <div>
@@ -104,29 +121,29 @@
             <h2 class="section-4-heading">Work</h2>
          </div>
          <div class="portfolio-bg">
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
+             <div><a href="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
+             <div><a href="Images/Untitled design (60).png"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
+             <div><a href="Images/smma agency.png"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
          </div>
          <div class="portfolio-bg">
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
+             <div><a href="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
+             <div><a href="Images/Untitled design (60).png"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
+             <div><a href="Images/smma agency.png"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
          </div>
          <div class="portfolio-bg">
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
+             <div><a href="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
+             <div><a href="Images/Untitled design (60).png"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
+             <div><a href="Images/smma agency.png"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
          </div>
-                 <div class="portfolio-bg">
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
+         <div class="portfolio-bg">
+             <div><a href="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
+             <div><a href="Images/Untitled design (60).png"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
+             <div><a href="Images/smma agency.png"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
          </div>
-                 <div class="portfolio-bg">
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
-             <div><a href="fiverr.com"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
+         <div class="portfolio-bg">
+             <div><a href="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"><img class="sec-4-img" src="Images/All-Occasions-Party-Rental-11-14-2024_01_29_PM.png"></a></div>
+             <div><a href="Images/Untitled design (60).png"><img class="sec-4-img" src="Images/Untitled design (60).png"></a></div>
+             <div><a href="Images/smma agency.png"><img class="sec-4-img" src="Images/smma agency.png"></a></div>
          </div>
          <a href="#contact"><button class="sec-4-general-button">Contact</button></a>
     </div>
@@ -144,7 +161,8 @@
                   Sed nulla amet lorem feugiat tempus aliquam.
             </p>
             <a href="#Skills">
-                <a target="_blank" href="https://calendar.app.google/GNUX1VXVNrbW5jnn7"><button class="section-5-button">Book A Call &excl;</button></a>
+                <!--<a target="_blank" href="https://calendar.app.google/GNUX1VXVNrbW5jnn7"><button class="section-5-button">Book A Call &excl;</button></a>-->
+                <a target="_blank" href="http://wa.me/2348142565431"><button class="sec-5-button-2"> Chat Me </button></a>
             </a>
         </div>
        <!-- <div>
@@ -157,8 +175,15 @@
 
 <!--Footer section-->
 <footer class="footer-bg">
-    <p class="footer-text"><strong><a class="footer-text" href="">G mail :</a></strong>  Sammietechy3@gmail.com</p>
-    <p class="footer-text">© Sammietechy. All rigths reserved</p>
+    <div class="icon-bg">
+        <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=sammietechy3@gmail.com&tf=1"><img src="Images/communication.png" height="20px"></a>
+        <a class="footer-text" href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=sammietechy3@gmail.com&tf=1"><p>Sammietechy3@gmail.com</p></a>
+    </div>
+    <div>     
+        <p class="footer-text">© Sammietechy. All rights reserved</p>
+    </div>
 </footer>
+
+<script src="sammietechy.js"></script>
 </body>
 </html>
